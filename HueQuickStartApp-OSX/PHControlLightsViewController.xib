@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.Cocoa.XIB" version="3.0" toolsVersion="9532" systemVersion="15D21" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none">
+    <dependencies>
+        <deployment version="1070" identifier="macosx"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="9532"/>
+        <capability name="box content view" minToolsVersion="7.0"/>
+    </dependencies>
+    <objects>
+        <customObject id="-2" userLabel="File's Owner" customClass="PHControlLightsViewController">
+            <connections>
+                <outlet property="bridgeLastHeartbeatLabel" destination="9" id="44"/>
+                <outlet property="oneToggle" destination="qYX-LQ-MFQ" id="C8x-sM-GlZ"/>
+                <outlet property="sliderOneOutput" destination="gtV-Hn-5fd" id="W32-sp-aq7"/>
+                <outlet property="sliderThreeOutput" destination="aI4-A1-TY3" id="OOE-Uw-OUV"/>
+                <outlet property="sliderTwoOutput" destination="UKW-h2-7Zz" id="seI-on-Wb5"/>
+                <outlet property="threeToggle" destination="9F3-Ku-yj0" id="FvK-U2-mAH"/>
+                <outlet property="turnOffConnectLights" destination="ycr-Wx-f7q" id="FLy-2J-RnF"/>
+                <outlet property="turnOnConnectLights" destination="XMy-a0-A7m" id="siC-Rp-AHZ"/>
+                <outlet property="twoToggle" destination="ZbO-0a-eR1" id="HT5-6b-4BV"/>
+                <outlet property="view" destination="1" id="2"/>
+            </connections>
+        </customObject>
+        <customObject id="-1" userLabel="First Responder" customClass="FirstResponder"/>
+        <customObject id="-3" userLabel="Application" customClass="NSObject"/>
+        <customView id="1">
+            <rect key="frame" x="0.0" y="0.0" width="178" height="387"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <box autoresizesSubviews="NO" transparent="YES" title="Connected SmartBridge" borderType="line" titlePosition="noTitle" id="53">
+                    <rect key="frame" x="-3" y="-4" width="184" height="390"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                    <view key="contentView" id="u7c-Qx-wkG">
+                        <rect key="frame" x="1" y="1" width="182" height="388"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <slider horizontalHuggingPriority="750" id="gtV-Hn-5fd">
+                                <rect key="frame" x="33" y="114" width="20" height="256"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                <sliderCell key="cell" alignment="left" maxValue="254" tickMarkPosition="right" sliderType="linear" id="UH2-LA-NkH"/>
+                                <connections>
+                                    <action selector="sliderOne:" target="-2" id="KFf-jh-UwU"/>
+                                </connections>
+                            </slider>
+                            <slider horizontalHuggingPriority="750" id="UKW-h2-7Zz">
+                                <rect key="frame" x="81" y="114" width="20" height="256"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                <sliderCell key="cell" alignment="left" maxValue="254" tickMarkPosition="right" sliderType="linear" id="4Fj-Th-Ga6"/>
+                                <connections>
+                                    <action selector="sliderTwo:" target="-2" id="HvP-B5-YTv"/>
+                                </connections>
+                            </slider>
+                            <slider horizontalHuggingPriority="750" id="aI4-A1-TY3">
+                                <rect key="frame" x="129" y="114" width="20" height="256"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                <sliderCell key="cell" alignment="left" maxValue="254" tickMarkPosition="right" sliderType="linear" id="d30-Ej-nO7"/>
+                                <connections>
+                                    <action selector="sliderThree:" target="-2" id="2KU-If-opV"/>
+                                </connections>
+                            </slider>
+                            <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" id="9">
+                                <rect key="frame" x="22" y="13" width="137" height="16"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" alignment="center" placeholderString="Not connected" id="12">
+                                    <font key="font" metaFont="miniSystem"/>
+                                    <color key="textColor" white="0.5" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                                    <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                                </textFieldCell>
+                            </textField>
+                            <button verticalHuggingPriority="750" id="ycr-Wx-f7q">
+                                <rect key="frame" x="90" y="34" width="78" height="32"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                <buttonCell key="cell" type="push" title="All Off" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="4hU-1S-jBR">
+                                    <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                                    <font key="font" metaFont="system"/>
+                                </buttonCell>
+                                <connections>
+                                    <action selector="turnOffConnectLights:" target="-2" id="86F-YA-yKM"/>
+                                </connections>
+                            </button>
+                            <button verticalHuggingPriority="750" id="qYX-LQ-MFQ">
+                                <rect key="frame" x="24" y="73" width="38" height="32"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                <buttonCell key="cell" type="bevel" title="Main" bezelStyle="rounded" alignment="center" imageScaling="proportionallyDown" inset="2" id="6gr-Do-reM">
+                                    <behavior key="behavior" lightByBackground="YES" lightByGray="YES" changeBackground="YES" changeGray="YES"/>
+                                    <font key="font" metaFont="system"/>
+                                </buttonCell>
+                                <connections>
+                                    <action selector="updateOne:" target="-2" id="Way-ZR-I8R"/>
+                                </connections>
+                            </button>
+                            <button verticalHuggingPriority="750" id="ZbO-0a-eR1">
+                                <rect key="frame" x="71" y="73" width="41" height="32"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                <buttonCell key="cell" type="bevel" title="Office" bezelStyle="rounded" alignment="center" imageScaling="proportionallyDown" inset="2" id="xhw-i5-Uvq">
+                                    <behavior key="behavior" lightByBackground="YES" lightByGray="YES" changeBackground="YES" changeGray="YES"/>
+                                    <font key="font" metaFont="system"/>
+                                </buttonCell>
+                                <connections>
+                                    <action selector="updateTwo:" target="-2" id="gr1-vj-Qvy"/>
+                                </connections>
+                            </button>
+                            <button verticalHuggingPriority="750" id="9F3-Ku-yj0">
+                                <rect key="frame" x="118" y="73" width="43" height="32"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                <buttonCell key="cell" type="bevel" title="Bed" bezelStyle="rounded" alignment="center" imageScaling="proportionallyDown" inset="2" id="ms4-7Q-Mkq">
+                                    <behavior key="behavior" lightByBackground="YES" lightByGray="YES" changeBackground="YES" changeGray="YES"/>
+                                    <font key="font" metaFont="system"/>
+                                </buttonCell>
+                                <connections>
+                                    <action selector="updateThree:" target="-2" id="2RW-gP-r2H"/>
+                                </connections>
+                            </button>
+                            <button verticalHuggingPriority="750" id="XMy-a0-A7m" userLabel="Turn on">
+                                <rect key="frame" x="14" y="34" width="78" height="32"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                <buttonCell key="cell" type="push" title="All On" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="ycr-uM-5BG" userLabel="Turn on">
+                                    <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                                    <font key="font" metaFont="system"/>
+                                </buttonCell>
+                                <connections>
+                                    <action selector="turnOnConnectLights:" target="-2" id="12J-U8-4Lh"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                    </view>
+                    <color key="borderColor" white="0.0" alpha="0.41999999999999998" colorSpace="calibratedWhite"/>
+                    <color key="fillColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    <font key="titleFont" metaFont="system"/>
+                </box>
+            </subviews>
+            <point key="canvasLocation" x="191" y="509.5"/>
+        </customView>
+    </objects>
+</document>
