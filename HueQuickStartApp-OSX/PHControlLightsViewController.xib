@@ -67,7 +67,7 @@
                                 </textFieldCell>
                             </textField>
                             <button verticalHuggingPriority="750" id="ycr-Wx-f7q">
-                                <rect key="frame" x="90" y="34" width="78" height="32"/>
+                                <rect key="frame" x="87" y="34" width="81" height="32"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                                 <buttonCell key="cell" type="push" title="All Off" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="4hU-1S-jBR">
                                     <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
@@ -111,7 +111,7 @@
                                 </connections>
                             </button>
                             <button verticalHuggingPriority="750" id="XMy-a0-A7m" userLabel="Turn on">
-                                <rect key="frame" x="14" y="34" width="78" height="32"/>
+                                <rect key="frame" x="14" y="34" width="81" height="32"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                                 <buttonCell key="cell" type="push" title="All On" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="ycr-uM-5BG" userLabel="Turn on">
                                     <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
